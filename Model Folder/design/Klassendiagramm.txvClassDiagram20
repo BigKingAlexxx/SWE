@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhjbpkpmom-o7dt2u">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Klassendiagramm"/>
+		<property name="__options" value=""/>
+		<reference referencedUin="design:view:::V1hexuhjbpqx38w-rj0lbk">
+			<property name="bounds" value="220,69,86,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpqxgjr-hacdmn">
+			<property name="bounds" value="415,69,123,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpqxvnvqrfiur">
+			<property name="bounds" value="635,69,210,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpr1f8a2jfh23">
+			<property name="bounds" value="220,235,86,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpr1l8xo3ltbj">
+			<property name="bounds" value="415,235,125,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpr1qrtyt3ypl">
+			<property name="bounds" value="635,235,199,91"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpr0pxv-jozfej">
+			<property name="bounds" value="915,235,80,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbpr0x5f-lh82ra">
+			<property name="bounds" value="1075,235,80,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:link:::ieje0rjbpr4whx-iw7kdz">
+			<property name="sourceAnchor" value="311,122"/>
+			<property name="targetAnchor" value="420,122"/>
+			<property name="bendpoints" value=""/>
+		</reference>
+		<reference referencedUin="design:link:::ieje0rjbpr507a-qjgmd7">
+			<property name="sourceAnchor" value="543,111"/>
+			<property name="targetAnchor" value="640,111"/>
+			<property name="bendpoints" value=""/>
+		</reference>
+		<reference referencedUin="design:link:::ieje0rjbpr5xdk-x7zwak">
+			<property name="sourceAnchor" value="237,149"/>
+			<property name="targetAnchor" value="237,240"/>
+			<property name="bendpoints" value=""/>
+		</reference>
+		<reference referencedUin="design:link:::ieje0rjbpr625wj3nmyw">
+			<property name="sourceAnchor" value="311,271"/>
+			<property name="targetAnchor" value="420,271"/>
+			<property name="bendpoints" value=""/>
+		</reference>
+		<reference referencedUin="design:link:::ieje0rjbpr68nv-y3fy3y">
+			<property name="sourceAnchor" value="545,277"/>
+			<property name="targetAnchor" value="640,277"/>
+			<property name="bendpoints" value=""/>
+		</reference>
+	</view>
+</nodeSet>

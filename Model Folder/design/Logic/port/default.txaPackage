@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<link uin="ieje0rjbpr507a-qjgmd7">
+		<property name="$metaclass" value="Dependency20"/>
+		<participant referencedUin="uml:package::src:design.Logic.port" role="Client"></participant>
+		<participant referencedUin="uml:package::src:design.Logic.port.PortLogicSpielzug" role="Supplier"></participant>
+	</link>
+</nodeSet>

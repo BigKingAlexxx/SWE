@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<link uin="vldkmkjbpr6nvj-184xn2">
+		<property name="$metaclass" value="Dependency20"/>
+		<participant referencedUin="uml:package::src:application.Logic" role="Client"></participant>
+		<participant referencedUin="uml:package::src:design.Logic.port" role="Supplier"></participant>
+	</link>
+	<link uin="bufbs7jbpr6nvjhg65ek">
+		<property name="$metaclass" value="Dependency20"/>
+		<participant referencedUin="uml:package::src:application.Logic" role="Client"></participant>
+		<participant referencedUin="uml:package::src:design.Spielzug" role="Supplier"></participant>
+	</link>
+</nodeSet>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-jr6xbajbmirlg6-6ygkx3">
+		<property name="$metaclass" value="UseCaseDiagram20"/>
+		<property name="$name" value="UseCase_Spielzug_durchführen"/>
+		<reference referencedUin="design:node:::8krugmjbmis8vy-g2pbke">
+			<property name="bounds" value="295,35,321,380"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::gj7tthjbmitmb3-9buvnq:8krugmjbmis8vy-g2pbke">
+				<property name="bounds" value="76,158,178,26"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::8bho0jjbmitaeg-3okhwt">
+			<property name="bounds" value="135,115,50,91"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:link:::ieje0rjbmiu7i4h50eaq:8bho0jjbmitaeg-3okhwt">
+				<property name="sourceAnchor" value="190,171"/>
+				<property name="targetAnchor" value="420,222"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:clientCardinality:design:link:::ieje0rjbmiu7i4h50eaq:8bho0jjbmitaeg-3okhwt">
+					<property name="bounds" value="200,151,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:design:link:::ieje0rjbmiu7i4h50eaq:8bho0jjbmitaeg-3okhwt">
+					<property name="bounds" value="410,198,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::8bho0jjbmitf8a-e4t6l9">
+			<property name="bounds" value="128,255,63,91"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:link:::ieje0rjbmiubpk-f4nfk2:8bho0jjbmitf8a-e4t6l9">
+				<property name="sourceAnchor" value="196,296"/>
+				<property name="targetAnchor" value="422,244"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:supplierCardinality:design:link:::ieje0rjbmiubpk-f4nfk2:8bho0jjbmitf8a-e4t6l9">
+					<property name="bounds" value="363,233,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:design:link:::ieje0rjbmiubpk-f4nfk2:8bho0jjbmitf8a-e4t6l9">
+					<property name="bounds" value="206,270,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
