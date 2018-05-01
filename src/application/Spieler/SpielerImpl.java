@@ -7,8 +7,8 @@ import application.SpielEquipment.FigurImpl;
 
 public class SpielerImpl {
 
-	ArrayList<FigurImpl> figurenSpielfeld;
-	ArrayList<FigurImpl> heimatfeld;
+	public ArrayList<FigurImpl> figurenSpielfeld;
+	public ArrayList<FigurImpl> heimatfeld;
 	private int startPos;
 	private String farbe;
 	public FigurImpl figure1;
@@ -19,9 +19,9 @@ public class SpielerImpl {
 		figurenSpielfeld = new ArrayList<>();
 		this.startPos = startPos;
 		this.farbe = farbe;
-		figure1 = new FigurImpl(1, farbe);
-		figure2 = new FigurImpl(2, farbe);
-		figure3 = new FigurImpl(3, farbe);
+		figure1 = new FigurImpl(this, farbe, 1);
+		figure2 = new FigurImpl(this, farbe, 2);
+		figure3 = new FigurImpl(this, farbe, 3);
 		heimatfeld = new ArrayList<>(Arrays.asList(figure1, figure2, figure3));
 	}
 
@@ -33,12 +33,18 @@ public class SpielerImpl {
 		return this.startPos;
 	}
 
-	public FigurImpl getFigur(int index) {
-		return figurenSpielfeld.get(index);
+	public FigurImpl getFigurSpielfeld(int nummer) {
+		if (nummer == 1) return figure1;
+		if (nummer == 2) return figure2;
+		if (nummer == 3) return figure3;
+		return null;
 	}
 
-	public FigurImpl getFigurHeimat() {
-		return this.heimatfeld.get(0);
+	public FigurImpl getFigurHeimat(int nummer) {
+		if (nummer == 1) return figure1;
+		if (nummer == 2) return figure2;
+		if (nummer == 3) return figure3;
+		return null;
 	}
 
 	public void figurSetzenFeld() {

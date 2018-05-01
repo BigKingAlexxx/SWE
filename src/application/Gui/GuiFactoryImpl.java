@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-import application.Gui.Impl.MainFrame;
 import application.Gui.Impl.View.ManageSpielzug.SpielzugView;
 import application.Gui.Port.PortUI.UI;
 import application.Gui.Port.PortUI.UIPort;
@@ -53,23 +52,17 @@ public class GuiFactoryImpl implements GuiFactory, UIPort, UI {
 		spieler.add(spielerBlau);
 		
 		int i = 0;
-
 		FeldImpl feld = new FeldImpl();
-
-		
-
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		//StateMachineFactory.FACTORY.stateMachinePort().stateMachine().setState(State.S.Initialisiert);
 
 		while (true) {
+			ui.showFeld(spieler.get(i).getFarbe(), spielerRot, spielerGelb, spielerGruen, spielerBlau);
 			try {
 				if (br.readLine().equals("x")) {
 					SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().wuerfeln(spieler.get(i), feld);
-					ui.showFeld(spieler.get(i).getFarbe(), spielerRot, spielerGelb, spielerGruen, spielerBlau);
 					if (i == 3) i = -1;
 					i++;
 				}
-				System.out.println("------------------------------------------------------------------------------------");
 			} catch (IOException e) {
 				System.out.println("Fehler");
 				e.printStackTrace();

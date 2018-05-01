@@ -91,9 +91,6 @@
 						</reference>
 					</reference>
 				</reference>
-				<reference referencedUin="design:node:::mo8zizjbybyb0s89fcp8:-y8nsowjby8hal0-3zb60g:-yrgd8ejby83ln9-tn5myy">
-					<property name="bounds" value="20,350,20,24"/>
-				</reference>
 				<reference referencedUin="design:node:::7x5rzxjbycdhda-grot6:-y8nsowjby8hal0-3zb60g:-yrgd8ejby83ln9-tn5myy">
 					<property name="bounds" value="20,34,20,76"/>
 					<property name="location_set_by_user" value="true"/>
@@ -118,22 +115,6 @@
 					<property name="bounds" value="20,16,20,374"/>
 					<property name="location_set_by_user" value="true"/>
 					<property name="bounds_setted_by_user" value="true"/>
-					<reference referencedUin="design:node:::gtjpxojbybyb0r-9a34m8:c87hzvjby9e7te-uzipms:-y8nsowjby8h3lu-ut0683:-yrgd8ejby83ln9-tn5myy">
-						<property name="bounds" value="0,334,20,24"/>
-						<property name="location_set_by_user" value="true"/>
-						<property name="background_color" value="240,240,240"/>
-						<reference referencedUin="sd20_message_container:design:node:::gtjpxojbybyb0r-9a34m8:c87hzvjby9e7te-uzipms:-y8nsowjby8h3lu-ut0683:-yrgd8ejby83ln9-tn5myy">
-							<property name="bounds" value="0,0,0,0"/>
-							<reference referencedUin="sd20_message|1|call|105(design:node:::gtjpxojbybyb0r-9a34m8:c87hzvjby9e7te-uzipms:-y8nsowjby8h3lu-ut0683:-yrgd8ejby83ln9-tn5myy)">
-								<property name="sourceAnchor" value="130,357"/>
-								<property name="targetAnchor" value="610,357"/>
-								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="sd20_message_label:sd20_message|1|call|105(design:node:::gtjpxojbybyb0r-9a34m8:c87hzvjby9e7te-uzipms:-y8nsowjby8h3lu-ut0683:-yrgd8ejby83ln9-tn5myy)">
-									<property name="bounds" value="130,165,121,15"/>
-								</reference>
-							</reference>
-						</reference>
-					</reference>
 					<reference referencedUin="design:node:::7x5rzxjbyc3ou9ky6v9n:c87hzvjby9e7te-uzipms:-y8nsowjby8h3lu-ut0683:-yrgd8ejby83ln9-tn5myy">
 						<property name="bounds" value="0,106,20,206"/>
 						<property name="location_set_by_user" value="true"/>

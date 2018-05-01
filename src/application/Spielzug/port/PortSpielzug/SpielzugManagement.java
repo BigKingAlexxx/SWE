@@ -10,9 +10,9 @@ public interface SpielzugManagement {
 	
 	void pruefen(SpielerImpl spieler, FeldImpl feld);
 	void wuerfeln(SpielerImpl spieler, FeldImpl feld);
-	void wissensstreiterBewegen(SpielerImpl spieler, FigurImpl figur, int figurNummer, FeldImpl feld);
-	void bestaetigen(SpielerImpl spieler);
 	int getGewuerfelteZahl();
 	ArrayList<Integer> getErgebnisse();
 	void clearErgebnisse();
+	void figurWaehlen(int nummer);
+	boolean getShowErgebnisse();
 }

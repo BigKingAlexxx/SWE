@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vpje57wjgjljw02-ydp8ai">
+		<property name="$metaclass" value="DeploymentDiagram20"/>
+		<property name="$name" value="Objektmodell"/>
+		<reference referencedUin="jdt:e_class:src:application.Spielzug.Impl.ManagerSpielzug">
+			<property name="bounds" value="1475,278,200,273"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.Spielzug.Impl.ManagerSpielzug:SpielzugManagement">
+				<property name="sourceAnchor" value="1480,296"/>
+				<property name="targetAnchor" value="1400,296"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spielzug.Impl.ManagerSpielzug:stateMachine">
+				<property name="sourceAnchor" value="1610,556"/>
+				<property name="targetAnchor" value="1610,786"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Spielzug.SpielzugFactoryImpl">
+			<property name="bounds" value="1195,415,200,257"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.Spielzug.SpielzugFactoryImpl:SpielzugFactory">
+				<property name="sourceAnchor" value="1240,677"/>
+				<property name="targetAnchor" value="1240,725"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spielzug.SpielzugFactoryImpl:stateMachine">
+				<property name="sourceAnchor" value="1400,631"/>
+				<property name="targetAnchor" value="1584,786"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spielzug.SpielzugFactoryImpl:stateMachinePort">
+				<property name="sourceAnchor" value="1378,677"/>
+				<property name="targetAnchor" value="1378,961"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spielzug.SpielzugFactoryImpl:managerSpielzug">
+				<property name="sourceAnchor" value="1400,488"/>
+				<property name="targetAnchor" value="1480,488"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Spielzug.SpielzugFactoryImpl:SpielzugPort">
+				<property name="sourceAnchor" value="1200,595"/>
+				<property name="targetAnchor" value="997,693"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Spielzug.SpielzugFactoryImpl:SpielzugManagement">
+				<property name="sourceAnchor" value="1318,420"/>
+				<property name="targetAnchor" value="1318,309"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Controller.Main">
+			<property name="bounds" value="35,15,176,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView">
+			<property name="bounds" value="375,15,200,257"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:Observer">
+				<property name="sourceAnchor" value="580,60"/>
+				<property name="targetAnchor" value="1820,60"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:s1">
+				<property name="sourceAnchor" value="380,240"/>
+				<property name="targetAnchor" value="240,240"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:s3">
+				<property name="sourceAnchor" value="380,276"/>
+				<property name="targetAnchor" value="240,276"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:mvcPort">
+				<property name="sourceAnchor" value="500,277"/>
+				<property name="targetAnchor" value="500,420"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:s2">
+				<property name="sourceAnchor" value="380,232"/>
+				<property name="targetAnchor" value="240,232"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:spielzugManagement">
+				<property name="sourceAnchor" value="580,181"/>
+				<property name="targetAnchor" value="1200,181"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.Impl.View.ManageSpielzug.SpielzugView:s4">
+				<property name="sourceAnchor" value="380,266"/>
+				<property name="targetAnchor" value="240,266"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Gui.Port.PortUI.UI">
+			<property name="bounds" value="955,375,193,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Gui.Port.PortUI.UIPort">
+			<property name="bounds" value="955,494,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Gui.GuiFactoryImpl">
+			<property name="bounds" value="716,286,198,152"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.GuiFactoryImpl:mvcPort">
+				<property name="sourceAnchor" value="721,426"/>
+				<property name="targetAnchor" value="620,426"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Gui.GuiFactoryImpl:UI">
+				<property name="sourceAnchor" value="919,411"/>
+				<property name="targetAnchor" value="960,411"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.GuiFactoryImpl:ui">
+				<property name="sourceAnchor" value="721,302"/>
+				<property name="targetAnchor" value="580,212"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Gui.GuiFactoryImpl:UIPort">
+				<property name="sourceAnchor" value="919,437"/>
+				<property name="targetAnchor" value="1004,499"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Gui.GuiFactoryImpl:GuiFactory">
+				<property name="sourceAnchor" value="919,317"/>
+				<property name="targetAnchor" value="970,317"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.GuiFactoryImpl:spielzugPort">
+				<property name="sourceAnchor" value="857,443"/>
+				<property name="targetAnchor" value="857,693"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Gui.GuiFactory">
+			<property name="bounds" value="965,215,173,110"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.Gui.GuiFactory:FACTORY">
+				<property name="sourceAnchor" value="1143,326"/>
+				<property name="targetAnchor" value="1139,330"/>
+				<property name="bendpoints" value="1172,326,1172,359,1139,359"/>
+				<property name="smooth_bendpoints" value="1172,326,1172,359,1139,359"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Logic.port.MVC.MVCPort">
+			<property name="bounds" value="415,415,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:application.Logic.port.MVC.MVCPort:SubjectPort">
+				<property name="sourceAnchor" value="600,500"/>
+				<property name="targetAnchor" value="600,1040"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Logic.port.PortLogicSpielzug.LogicSpielzugPort">
+			<property name="bounds" value="635,495,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:application.Logic.port.PortLogicSpielzug.LogicSpielzugPort:SpielzugPort">
+				<property name="sourceAnchor" value="830,580"/>
+				<property name="targetAnchor" value="830,693"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Logic.LogicFactoryImpl">
+			<property name="bounds" value="295,781,200,167"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.Logic.LogicFactoryImpl:MVCPort">
+				<property name="sourceAnchor" value="460,786"/>
+				<property name="targetAnchor" value="460,500"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Logic.LogicFactoryImpl:spielzugPort">
+				<property name="sourceAnchor" value="500,786"/>
+				<property name="targetAnchor" value="800,786"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Logic.LogicFactoryImpl:LogicSpielzugPort">
+				<property name="sourceAnchor" value="485,786"/>
+				<property name="targetAnchor" value="698,580"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.Logic.LogicFactoryImpl:LogicFactory">
+				<property name="sourceAnchor" value="328,786"/>
+				<property name="targetAnchor" value="328,680"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Logic.LogicFactoryImpl:subjectPort">
+				<property name="sourceAnchor" value="460,953"/>
+				<property name="targetAnchor" value="460,1040"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Logic.LogicFactory">
+			<property name="bounds" value="175,550,200,125"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.Logic.LogicFactory:FACTORY">
+				<property name="sourceAnchor" value="380,676"/>
+				<property name="targetAnchor" value="376,680"/>
+				<property name="bendpoints" value="409,676,409,709,376,709"/>
+				<property name="smooth_bendpoints" value="409,676,409,709,376,709"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.SpielEquipment.FeldImpl">
+			<property name="bounds" value="55,999,200,182"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:feld">
+				<property name="sourceAnchor" value="160,1004"/>
+				<property name="targetAnchor" value="160,969"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.SpielEquipment.FeldImpl:feld">
+					<property name="bounds" value="263,1020,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.SpielEquipment.FeldImpl:feld">
+					<property name="bounds" value="163,970,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.SpielEquipment.FigurImpl">
+			<property name="bounds" value="55,781,200,183"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FigurImpl:spieler">
+				<property name="sourceAnchor" value="110,786"/>
+				<property name="targetAnchor" value="110,522"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Spieler.SpielerImpl">
+			<property name="bounds" value="35,184,200,333"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.Spieler.SpielerImpl:heimatfeld">
+				<property name="sourceAnchor" value="118,522"/>
+				<property name="targetAnchor" value="118,786"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.Spieler.SpielerImpl:heimatfeld">
+					<property name="bounds" value="121,737,21,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.Spieler.SpielerImpl:heimatfeld">
+					<property name="bounds" value="121,543,10,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spieler.SpielerImpl:figure2">
+				<property name="sourceAnchor" value="142,522"/>
+				<property name="targetAnchor" value="142,786"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spieler.SpielerImpl:figurenSpielfeld">
+				<property name="sourceAnchor" value="126,522"/>
+				<property name="targetAnchor" value="126,786"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.Spieler.SpielerImpl:figurenSpielfeld">
+					<property name="bounds" value="129,523,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.Spieler.SpielerImpl:figurenSpielfeld">
+					<property name="bounds" value="129,757,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spieler.SpielerImpl:figure1">
+				<property name="sourceAnchor" value="150,522"/>
+				<property name="targetAnchor" value="150,786"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.Spieler.SpielerImpl:figure3">
+				<property name="sourceAnchor" value="134,522"/>
+				<property name="targetAnchor" value="134,786"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Spielzug.port.PortSpielzug.SpielzugManagement">
+			<property name="bounds" value="1195,135,200,169"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Spielzug.port.PortSpielzug.SpielzugPort">
+			<property name="bounds" value="795,688,200,94"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.Spielzug.SpielzugFactory">
+			<property name="bounds" value="1075,720,200,110"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.Spielzug.SpielzugFactory:FACTORY">
+				<property name="sourceAnchor" value="1280,831"/>
+				<property name="targetAnchor" value="1276,835"/>
+				<property name="bendpoints" value="1309,831,1309,864,1276,864"/>
+				<property name="smooth_bendpoints" value="1309,831,1309,864,1276,864"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.Impl.StateMachineImpl">
+			<property name="bounds" value="1815,235,200,182"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.StateMachine.Impl.StateMachineImpl:currentState">
+				<property name="sourceAnchor" value="1842,422"/>
+				<property name="targetAnchor" value="1842,486"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.StateMachine.Impl.StateMachineImpl:observers">
+				<property name="sourceAnchor" value="1874,240"/>
+				<property name="targetAnchor" value="1874,100"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.StateMachine.Impl.StateMachineImpl:observers">
+					<property name="bounds" value="1877,211,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.StateMachine.Impl.StateMachineImpl:observers">
+					<property name="bounds" value="1877,101,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.StateMachine.StateMachine">
+			<property name="bounds" value="1535,781,200,94"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.StateMachine.StateMachinePort">
+			<property name="bounds" value="1274,956,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.Subject.Observer">
+			<property name="bounds" value="1815,15,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.Subject.Subject">
+			<property name="bounds" value="1715,671,200,94"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.Subject.SubjectPort">
+			<property name="bounds" value="415,1035,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.port.State">
+			<property name="bounds" value="1715,481,200,126"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.StateMachineFactoryImpl">
+			<property name="bounds" value="1815,881,200,212"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.StateMachine.StateMachineFactoryImpl:Subject">
+				<property name="sourceAnchor" value="1900,886"/>
+				<property name="targetAnchor" value="1900,770"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.StateMachine.StateMachineFactoryImpl:stateMachine">
+				<property name="sourceAnchor" value="1975,886"/>
+				<property name="targetAnchor" value="1975,422"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.StateMachine.StateMachineFactoryImpl:StateMachinePort">
+				<property name="sourceAnchor" value="1820,1040"/>
+				<property name="targetAnchor" value="1479,1040"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.StateMachine.StateMachineFactoryImpl:StateMachine">
+				<property name="sourceAnchor" value="1820,934"/>
+				<property name="targetAnchor" value="1722,880"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.StateMachine.StateMachineFactoryImpl:StateMachineFactory">
+				<property name="sourceAnchor" value="1820,982"/>
+				<property name="targetAnchor" value="1740,982"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.StateMachine.StateMachineFactoryImpl:SubjectPort">
+				<property name="sourceAnchor" value="1820,1089"/>
+				<property name="targetAnchor" value="620,1089"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.StateMachine.StateMachineFactory">
+			<property name="bounds" value="1535,888,200,125"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.StateMachine.StateMachineFactory:FACTORY">
+				<property name="sourceAnchor" value="1740,1014"/>
+				<property name="targetAnchor" value="1736,1018"/>
+				<property name="bendpoints" value="1769,1014,1769,1047,1736,1047"/>
+				<property name="smooth_bendpoints" value="1769,1014,1769,1047,1736,1047"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

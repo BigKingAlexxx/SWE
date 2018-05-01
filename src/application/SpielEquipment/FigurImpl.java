@@ -1,15 +1,19 @@
 package application.SpielEquipment;
 
+import application.Spieler.SpielerImpl;
+
 public class FigurImpl {
 
 	public static final int POSHEIMAT = -2;
-	private int nummer;
 	private String farbe;
 	private int position;
+	private SpielerImpl spieler;
+	private int nummer;
 	
-	public FigurImpl(int nummer, String farbe) {
-		this.nummer = nummer;
+	public FigurImpl(SpielerImpl spieler, String farbe, int nummer) {
+		this.spieler = spieler;
 		this.farbe = farbe;
+		this.nummer = nummer;
 		this.position = POSHEIMAT;
 	}
 	
@@ -25,10 +29,9 @@ public class FigurImpl {
 		return this.farbe;
 	}
 	
-	public int getNummer() {
-		return this.nummer;
+	public SpielerImpl getSpieler() {
+		return this.spieler;
 	}
-	
 	
 	
 	

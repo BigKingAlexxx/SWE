@@ -18,8 +18,9 @@ public class ManagerSpielzug implements SpielzugManagement{
 	private Random rand = new Random();
 	private StateMachine stateMachine;
 	private ArrayList<Integer> ergebnisse = new ArrayList<>();
-	
+	private int figurNummer = 0;
 	public int anzahlWuerfe = 0;
+	public boolean showErgebnisse = true;
 	
 	public ManagerSpielzug(StateMachinePort stateMachinePort) {
 		this.stateMachine = stateMachinePort.stateMachine();
@@ -44,53 +45,31 @@ public class ManagerSpielzug implements SpielzugManagement{
 	}
 
 	@Override
-	public void wissensstreiterBewegen(SpielerImpl spieler, FigurImpl figur, int figurNummer, FeldImpl feld) {
-		if (stateMachine.getState() == State.S.FigurBewegen) feld.bewegeFigur(spieler, spieler.getFigur(figurNummer), this.gewuerfelteZahl);
-		
-		if (feld.figurKollidiertGegner(figur, feld.getFeldnummer())) stateMachine.setState(State.S.Wissenstest);
-		
-		if (stateMachine.getState() == State.S.Wissenstest) feld.figurErsetzen(spieler, figur);
-		
-		if (stateMachine.getState() == State.S.FigurAufStartfeld && feld.startFeldFrei(spieler)) {
-			spieler.figurSetzenFeld();
-			feld.setzeFigurFeld(figur, spieler);
-		}
-		
-		stateMachine.setState(State.S.Bestaetigen);
-	}
-
-	@Override
-	public void bestaetigen(SpielerImpl spieler) {
-		ergebnisse.clear();
-		stateMachine.setState(State.S.NaechsterSpieler);
-	}
-
-	@Override
 	public int getGewuerfelteZahl() {
 		return this.gewuerfelteZahl;
 	}
 
 	@Override
 	public void pruefen(SpielerImpl spieler, FeldImpl feld) {
+		this.showErgebnisse = true;
 		if (this.anzahlWuerfe < 3) {
 			
 			if (this.gewuerfelteZahl == 6 && spieler.getAnzahlFigurHeimatfeld() == 0) {
 				stateMachine.setState(State.S.FigurBewegen);
-				for (int i = 0; i < 3; i++) {
-					if (spieler.getFigur(i) != null) {
-						feld.bewegeFigur(spieler, spieler.getFigur(i), this.gewuerfelteZahl);
-						break;
-					}
-				}
+				feld.bewegeFigur(spieler.getFigurSpielfeld(this.figurNummer), this.gewuerfelteZahl);
 				this.anzahlWuerfe = 0;
+				this.figurNummer = 0;
+				showErgebnisse = false;
 				stateMachine.setState(State.S.Bestaetigen);
 			}
 			
 			if (this.gewuerfelteZahl == 6 && spieler.getAnzahlFigurHeimatfeld() > 0) {
 				if (feld.startFeldFrei(spieler)) {
 					stateMachine.setState(State.S.FigurAufStartfeld);
-					feld.setzeFigurFeld(spieler.getFigurHeimat(), spieler);
+					feld.setzeFigurFeld(spieler.getFigurHeimat(this.figurNummer), spieler);
 					this.anzahlWuerfe = 0;
+					this.figurNummer = 0;
+					showErgebnisse = false;
 					stateMachine.setState(State.S.Bestaetigen);
 				}
 				else {
@@ -101,13 +80,10 @@ public class ManagerSpielzug implements SpielzugManagement{
 			
 			if (this.gewuerfelteZahl < 6 && spieler.getAnzahlFigurHeimatfeld() < 3) {
 				stateMachine.setState(State.S.FigurBewegen);
-				for (int i = 0; i < 3; i++) {
-					if (spieler.getFigur(i) != null) {
-						feld.bewegeFigur(spieler, spieler.getFigur(i), this.gewuerfelteZahl);
-						break;
-					}
-				}
+				feld.bewegeFigur(spieler.getFigurSpielfeld(this.figurNummer), this.gewuerfelteZahl);
 				this.anzahlWuerfe = 0;
+				this.figurNummer = 0;
+				showErgebnisse = false;
 				stateMachine.setState(State.S.Bestaetigen);
 			} else if (this.gewuerfelteZahl < 6 && spieler.getAnzahlFigurHeimatfeld() == 3) {
 				stateMachine.setState(State.S.Wuerfeln);
@@ -120,6 +96,21 @@ public class ManagerSpielzug implements SpielzugManagement{
 			stateMachine.setState(State.S.Bestaetigen);
 		}
 		
+	}
+
+	@Override
+	public void figurWaehlen(int nummer) {
+		if (nummer == 1 || nummer == 2 || nummer == 3) {
+			this.figurNummer = nummer;
+		} else {
+			System.out.println(stateMachine.getState().toString());
+			stateMachine.setState(State.S.Bestaetigen);
+		}
+	}
+	
+	@Override
+	public boolean getShowErgebnisse() {
+		return this.showErgebnisse;
 	}
 
 }

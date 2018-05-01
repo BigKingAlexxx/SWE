@@ -41,18 +41,6 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
 	}
 
 	@Override
-	public synchronized void wissensstreiterBewegen(SpielerImpl spieler, FigurImpl figur, int nummer, FeldImpl feld) {
-		if (stateMachine.getState() == State.S.FigurBewegen || stateMachine.getState() == State.S.FigurAufStartfeld || stateMachine.getState() == State.S.Wissenstest) 
-			this.managerSpielzug.wissensstreiterBewegen(spieler, figur, nummer, feld);
-	}
-
-	@Override
-	public synchronized void bestaetigen(SpielerImpl spieler) {
-		if (stateMachine.getState() == State.S.Bestaetigen)
-			this.managerSpielzug.bestaetigen(spieler);
-	}
-
-	@Override
 	public synchronized int getGewuerfelteZahl() {
 		return this.managerSpielzug.getGewuerfelteZahl();
 	}
@@ -75,5 +63,17 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
 	@Override
 	public void clearErgebnisse() {
 		this.managerSpielzug.clearErgebnisse();
+	}
+
+	@Override
+	public void figurWaehlen(int nummer) {
+		if (stateMachine.getState() == State.S.FigurAufStartfeld || stateMachine.getState() == State.S.FigurBewegen) {
+			this.managerSpielzug.figurWaehlen(nummer);
+		}	
+	}
+
+	@Override
+	public boolean getShowErgebnisse() {
+		return this.managerSpielzug.getShowErgebnisse();
 	}
 }

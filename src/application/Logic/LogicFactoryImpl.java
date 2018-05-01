@@ -40,4 +40,11 @@ public class LogicFactoryImpl implements LogicSpielzugPort, LogicFactory, MVCPor
 		return subjectPort.subject();
 	}
 
+
+	@Override
+	public void setAnzahlWuerfe(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
