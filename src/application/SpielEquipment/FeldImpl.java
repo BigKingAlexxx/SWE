@@ -6,6 +6,13 @@ import application.Gui.ConsoleColors;
 import application.Spieler.SpielerImpl;
 
 public class FeldImpl {
+	
+	private SpielerImpl spieler1;
+	private SpielerImpl spieler2;
+	private SpielerImpl spieler3;
+	private SpielerImpl spieler4;
+	private ArrayList<SpielerImpl> spielerArray = new ArrayList<>();
+	private int currentPlayer = 0;
 
 	private ArrayList<FigurImpl> feld;
 
@@ -13,10 +20,31 @@ public class FeldImpl {
 		this.feld = new ArrayList<>(48);
 		for (int i = 0; i < 48; i++)
 			this.feld.add(null);
+		spieler1 = new SpielerImpl("Rot", 0);
+		spieler2 = new SpielerImpl("Gelb", 11);
+		spieler3 = new SpielerImpl("Gruen", 23);
+		spieler4 = new SpielerImpl("Blau", 35);
+		spielerArray.add(spieler1);
+		spielerArray.add(spieler2);
+		spielerArray.add(spieler3);
+		spielerArray.add(spieler4);
 	}
 
 	public ArrayList<FigurImpl> getFigurArray() {
 		return this.feld;
+	}
+	
+	public int getCurrentPlayer() {
+		return this.currentPlayer;
+	}
+	
+	public void nextPlayer() {
+		this.currentPlayer += 1;
+		if (this.currentPlayer == spielerArray.size()) this.currentPlayer = 0;
+	}
+	
+	public SpielerImpl getSpieler(int index) {
+		return this.spielerArray.get(index);
 	}
 
 	public boolean startFeldFrei(SpielerImpl spieler) {

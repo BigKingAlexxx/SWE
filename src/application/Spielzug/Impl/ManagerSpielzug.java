@@ -1,4 +1,4 @@
-package application.Spielzug.Impl;
+ package application.Spielzug.Impl;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -36,6 +36,8 @@ public class ManagerSpielzug implements SpielzugManagement{
 	
 	@Override
 	public ArrayList<Integer> getErgebnisse() {
+		if (ergebnisse.size() == 4)
+			ergebnisse.remove(3);
 		return this.ergebnisse;
 	}
 	
@@ -60,6 +62,7 @@ public class ManagerSpielzug implements SpielzugManagement{
 				this.anzahlWuerfe = 0;
 				this.figurNummer = 0;
 				showErgebnisse = false;
+				feld.nextPlayer();
 				stateMachine.setState(State.S.Bestaetigen);
 			}
 			
@@ -70,10 +73,12 @@ public class ManagerSpielzug implements SpielzugManagement{
 					this.anzahlWuerfe = 0;
 					this.figurNummer = 0;
 					showErgebnisse = false;
+					feld.nextPlayer();
 					stateMachine.setState(State.S.Bestaetigen);
 				}
 				else {
 					this.anzahlWuerfe = 0;
+					feld.nextPlayer();
 					stateMachine.setState(State.S.Bestaetigen);
 				}
 			}
@@ -83,6 +88,7 @@ public class ManagerSpielzug implements SpielzugManagement{
 				feld.bewegeFigur(spieler.getFigurSpielfeld(this.figurNummer), this.gewuerfelteZahl);
 				this.anzahlWuerfe = 0;
 				this.figurNummer = 0;
+				feld.nextPlayer();
 				showErgebnisse = false;
 				stateMachine.setState(State.S.Bestaetigen);
 			} else if (this.gewuerfelteZahl < 6 && spieler.getAnzahlFigurHeimatfeld() == 3) {
@@ -93,6 +99,7 @@ public class ManagerSpielzug implements SpielzugManagement{
 			
 		} else {
 			this.anzahlWuerfe = 0;
+			feld.nextPlayer();
 			stateMachine.setState(State.S.Bestaetigen);
 		}
 		
@@ -106,10 +113,12 @@ public class ManagerSpielzug implements SpielzugManagement{
 			System.out.println(stateMachine.getState().toString());
 			stateMachine.setState(State.S.Bestaetigen);
 		}
+		
 	}
 	
 	@Override
 	public boolean getShowErgebnisse() {
+		
 		return this.showErgebnisse;
 	}
 

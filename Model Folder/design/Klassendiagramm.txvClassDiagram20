@@ -71,5 +71,15 @@
 			<property name="targetAnchor" value="640,277"/>
 			<property name="bendpoints" value=""/>
 		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbyeyqcje6dxx4">
+			<property name="bounds" value="915,355,162,91"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhjbyex1hu1vpwzn">
+			<property name="bounds" value="1115,363,114,75"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

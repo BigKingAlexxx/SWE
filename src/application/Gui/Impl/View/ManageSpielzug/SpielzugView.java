@@ -38,7 +38,6 @@ public class SpielzugView implements Observer{
 		if (State.S.FigurAufStartfeld == state) {
 			System.out.println("Spieler " + this.farbe + ":");
 			ArrayList<Integer> ergebnisse = SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().getErgebnisse();
-			if (ergebnisse.size() == 4) ergebnisse.remove(3);
 			System.out.println(ergebnisse);
 			SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().clearErgebnisse();
 			System.out.println("Bitte Figur wählen (1, 2, 3) um aufs Feld zu schicken.");
@@ -58,7 +57,6 @@ public class SpielzugView implements Observer{
 		if (State.S.FigurBewegen == state) {
 			System.out.println("Spieler " + this.farbe + ":");
 			ArrayList<Integer> ergebnisse = SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().getErgebnisse();
-			if (ergebnisse.size() == 4) ergebnisse.remove(3);
 			System.out.println(ergebnisse);
 			SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().clearErgebnisse();
 			System.out.println("Bitte Figur wählen (1, 2, 3) um zu bewegen.");
@@ -80,8 +78,7 @@ public class SpielzugView implements Observer{
 				System.out.println("Spieler " + this.farbe + ":");
 				ArrayList<Integer> ergebnisse = SpielzugFactory.FACTORY.spielzugPort().spielzugManagement()
 						.getErgebnisse();
-				if (ergebnisse.size() == 4)
-					ergebnisse.remove(3);
+				
 				System.out.println(ergebnisse);
 				SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().clearErgebnisse();
 			}
@@ -105,7 +102,7 @@ public class SpielzugView implements Observer{
 		System.out.println(
 				"Spieler Blau:	Fig1 " + this.s4.getFig1() + ", 		Fig2 " + this.s4.getFig2() + ", 		Fig3 " + this.s4.getFig3());
 		System.out.println();
-		System.out.println("Spieler " + farbe + " am Zug. Zum Würfeln X drücken und mit Enter bestätigen.");
+		System.out.println("Spieler " + farbe + " am Zug. Zum Würfeln x drücken und mit Enter bestätigen.");
 		System.out.println("------------------------------------------------------------------------------------");
 	}
 

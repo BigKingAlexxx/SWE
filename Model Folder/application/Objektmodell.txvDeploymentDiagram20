@@ -191,9 +191,35 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:application.SpielEquipment.FeldImpl">
-			<property name="bounds" value="55,999,200,182"/>
+			<property name="bounds" value="55,999,200,318"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:spieler4">
+				<property name="sourceAnchor" value="179,1004"/>
+				<property name="targetAnchor" value="172,522"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:spielerArray">
+				<property name="sourceAnchor" value="148,1004"/>
+				<property name="targetAnchor" value="142,522"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.SpielEquipment.FeldImpl:spielerArray">
+					<property name="bounds" value="151,975,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.SpielEquipment.FeldImpl:spielerArray">
+					<property name="bounds" value="145,523,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:spieler3">
+				<property name="sourceAnchor" value="172,1004"/>
+				<property name="targetAnchor" value="164,522"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:spieler2">
+				<property name="sourceAnchor" value="164,1004"/>
+				<property name="targetAnchor" value="157,522"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:spieler1">
+				<property name="sourceAnchor" value="156,1004"/>
+				<property name="targetAnchor" value="150,522"/>
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:application.SpielEquipment.FeldImpl:feld">
 				<property name="sourceAnchor" value="160,1004"/>
 				<property name="targetAnchor" value="160,969"/>

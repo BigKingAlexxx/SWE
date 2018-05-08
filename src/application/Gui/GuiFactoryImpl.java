@@ -39,29 +39,14 @@ public class GuiFactoryImpl implements GuiFactory, UIPort, UI {
 
 	@Override
 	public void startEventLoop() {
-		SpielerImpl spielerRot = new SpielerImpl("Rot", 0);
-		SpielerImpl spielerGelb = new SpielerImpl("Gelb", 11);
-		SpielerImpl spielerGruen = new SpielerImpl("Gruen", 23);
-		SpielerImpl spielerBlau = new SpielerImpl("Blau", 35);
-
-		ArrayList<SpielerImpl> spieler = new ArrayList<SpielerImpl>();
-		
-		spieler.add(spielerRot);
-		spieler.add(spielerGelb);
-		spieler.add(spielerGruen);
-		spieler.add(spielerBlau);
-		
-		int i = 0;
 		FeldImpl feld = new FeldImpl();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
-			ui.showFeld(spieler.get(i).getFarbe(), spielerRot, spielerGelb, spielerGruen, spielerBlau);
+			ui.showFeld(feld.getSpieler(feld.getCurrentPlayer()).getFarbe(), feld.getSpieler(0), feld.getSpieler(1), feld.getSpieler(2), feld.getSpieler(3));
 			try {
 				if (br.readLine().equals("x")) {
-					SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().wuerfeln(spieler.get(i), feld);
-					if (i == 3) i = -1;
-					i++;
+					SpielzugFactory.FACTORY.spielzugPort().spielzugManagement().wuerfeln(feld.getSpieler(feld.getCurrentPlayer()), feld);
 				}
 			} catch (IOException e) {
 				System.out.println("Fehler");
